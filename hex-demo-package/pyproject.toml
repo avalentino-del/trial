@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hex-demo"
+version = "0.1.0"
+description = "Tiny sample package for testing Git package import in Hex"
+requires-python = ">=3.9"
+dependencies = ["pandas"]
+
+[tool.setuptools]
+packages = ["hex_demo"]
+
+[tool.setuptools.package-data]
+hex_demo = ["data/*.csv"]
